@@ -18,14 +18,9 @@ This assumes AAC encoding for the audio. If it isn't already AAC-encoded, use Ha
 RTMP_URL="rtmps://rtmp-api.facebook.com:80/rtmp"
 RTMP_KEY="blahblahblah" #y your key goes here
 
-# ffmpeg -i $1 \
-# 	-deinterlace -vcodec libx264 \
-# 	-pix_fmt yuv420p -preset medium -r 30 -g 60 -b:v 2500k \
-# 	-acodec aac -strict -2 -ar 44100 -threads 6 -b:a 712000 \
-# 	-flags +global_header \
-# 	-bufsize 512k \
-# 	-f flv "$RTMP_URL/$RTMP_KEY"
-
-ffmpeg -re -y -i $1 -c:a copy -ac 1 -ar 44100 -b:a 128k -vcodec libx264 -pix_fmt yuv420p -vf scale=720:-1 -r 30 -g 60 \
+ffmpeg -re -i $1 \
+	-c:a copy -b:a 128k -ar 44100 \
+	-vcodec libx264 -pix_fmt yuv420p \
+	-r 30 -g 60 \
 	-f flv "$RTMP_URL/$RTMP_KEY"
 ```
