@@ -12,6 +12,7 @@ brew install homebrew-ffmpeg/ffmpeg/ffmpeg $(brew options homebrew-ffmpeg/ffmpeg
 ```
 
 ## 2. Shell script
+This assumes AAC encoding for the audio. If it isn't already AAC-encoded, use HandBrake to fix that up first!
 
 ```bash
 RTMP_URL="rtmps://rtmp-api.facebook.com:80/rtmp"
