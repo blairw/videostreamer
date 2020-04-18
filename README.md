@@ -8,7 +8,7 @@ This part adapted from https://gist.github.com/Piasy/b5dfd5c048eb69d1b91719988c0
 brew uninstall --force --ignore-dependencies ffmpeg
 brew install chromaprint amiaopensource/amiaos/decklinksdk
 brew tap homebrew-ffmpeg/ffmpeg
-brew upgrade homebrew-ffmpeg/ffmpeg/ffmpeg $(brew options homebrew-ffmpeg/ffmpeg/ffmpeg | grep -vE '\s' | grep -- '--with-' | grep -vi chromaprint | tr '\n' ' ')
+brew upgrade homebrew-ffmpeg/ffmpeg/ffmpeg $(brew options homebrew-ffmpeg/ffmpeg/ffmpeg | grep -vE '\s' | grep -- '--with-' | grep -vi chromaprint | grep -vi game-music-emu | tr '\n' ' ')
 ```
 
 ## 2. Shell script
