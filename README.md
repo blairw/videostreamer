@@ -25,8 +25,6 @@ Some comments:
 - Ensure that you use the `rtmps` protocol on Facebook, the `s` makes it secure. Using just `rtmp` (as most tutorials on the Internet seem to recommed) will cause Facebook to reject your upload.
 - Don't change `yuv420p`. The "420p" doesn't refer to a resolution of 420 pixels tall, it's a colour setting.
 
-Save this file to your Desktop (e.g. `stream.sh`), give it appropriate permissions (e.g. `chmod +x stream.sh`). Then you can stream the video like so: `./stream.sh sunday200419.mp4`.
-
 ```bash
 RTMP_URL="rtmps://rtmp-api.facebook.com:443/rtmp"
 RTMP_KEY="blahblahblah" #y your key goes here
@@ -41,6 +39,13 @@ ffmpeg -re -i $1 \
 	-r 30 -g 60 \
 	-f flv "$RTMP_URL/$RTMP_KEY"
 ```
+
+## 3. Running the shell script
+
+Save the shell script above to your Desktop (e.g. `stream.sh`), give it appropriate permissions (e.g. `chmod +x stream.sh`). Then you can stream the video like so: `./stream.sh sunday200419.mp4`.
+
+![demo.gif](demo.gif)
+
 
 ## Performance (totally unscientific observations)
 
