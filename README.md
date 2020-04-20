@@ -41,3 +41,9 @@ ffmpeg -re -i $1 \
 	-r 30 -g 60 \
 	-f flv "$RTMP_URL/$RTMP_KEY"
 ```
+
+## Performance (totally unscientific observations)
+
+- I'm on NBN50
+- I tried streaming a 5 minute 1080p MP4 file, had about 10% of frames drop
+- I tried streaming the same file at 720p, had <1% of frames drop
