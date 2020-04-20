@@ -4,6 +4,8 @@
 
 This part adapted from https://gist.github.com/Piasy/b5dfd5c048eb69d1b91719988c0325d8
 
+You'll need to run the below in the Terminal. Note that you will first have to have Homebrew set up, https://brew.sh/
+
 ```bash
 brew uninstall --force --ignore-dependencies ffmpeg
 brew install chromaprint amiaopensource/amiaos/decklinksdk
