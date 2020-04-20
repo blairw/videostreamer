@@ -16,7 +16,10 @@ This assumes AAC encoding for the audio. If it isn't already AAC-encoded, use Ha
 
 Some comments:
 
+- Set `RTMP_URL` annd `RTMP_KEY` based on what Facebook/YouTube/etc. assign to you when you set up a new livestream.
+- You have to use the `rtmps` protocol on Facebook, the `s` makes it secure. Dropping the `s` will cause Facebook to reject your upload.
 - You have to set `PIXELS_WIDE` to the _horizontal_ pixel count that you want to broadcast at. For example, for 720p, this number should be set to `1280` for a 16:9 video (1280x720); for 1080p, this number should be set to `1920` for a 16:9 video (1920x1080).
+- Don't change `yuv420p`. The "420p" doesn't refer to a resolution of 420 pixels tall, it's a colour setting.
 
 Save this file to your Desktop (e.g. `stream.sh`), give it appropriate permissions (e.g. `chmod +x stream.sh`). Then you can stream the video like so: `./stream.sh sunday200419.mp4`.
 
