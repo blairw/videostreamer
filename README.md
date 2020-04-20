@@ -18,6 +18,8 @@ Some comments:
 
 - You have to set `PIXELS_WIDE` to the _horizontal_ pixel count that you want to broadcast at. For example, for 720p, this number should be set to `1280` for a 16:9 video (1280x720); for 1080p, this number should be set to `1920` for a 16:9 video (1920x1080).
 
+Save this file to your Desktop (e.g. `stream.sh`), give it appropriate permissions (e.g. `chmod +x stream.sh`). Then you can stream the video like so: `./stream.sh sunday200419.mp4`.
+
 ```bash
 RTMP_URL="rtmps://rtmp-api.facebook.com:443/rtmp"
 RTMP_KEY="blahblahblah" #y your key goes here
