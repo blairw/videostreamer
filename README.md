@@ -13,7 +13,7 @@ brew tap homebrew-ffmpeg/ffmpeg
 brew install homebrew-ffmpeg/ffmpeg/ffmpeg $(brew options homebrew-ffmpeg/ffmpeg/ffmpeg | grep -vE '\s' | grep -- '--with-' | grep -vi chromaprint | grep -vi game-music-emu | tr '\n' ' ')
 ```
 
-I imagine you could also get this working on Linux and Microsoft Windows (via WSL) if you can compile ``ffmpeg` with `openssl` support. Haven't had a chance to test that myself, but this looks promising: https://askubuntu.com/questions/650577/how-to-compile-ffmpeg-with-https-support
+I imagine you could also get this working on Linux and Microsoft Windows (via WSL) if you can compile `ffmpeg` with `openssl` support. Haven't had a chance to test that myself, but this looks promising: https://askubuntu.com/questions/650577/how-to-compile-ffmpeg-with-https-support
 
 ## 2. Creating the shell script
 This assumes AAC encoding for the audio. If it isn't already AAC-encoded, use HandBrake to fix that up first!
