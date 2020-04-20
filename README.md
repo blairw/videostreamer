@@ -29,8 +29,8 @@ Some comments:
 
 ### Shell script contents
 ```bash
-RTMP_URL="rtmps://rtmp-api.facebook.com:443/rtmp"
-RTMP_KEY="blahblahblah" #y your key goes here
+RTMP_URL="rtmps://rtmp-api.facebook.com:443/rtmp" # change this if you're not using FB
+RTMP_KEY="blahblahblah" # your key goes here
 PIXELS_WIDE="1280"
 
 ffmpeg -re -i $1 \
