@@ -56,3 +56,5 @@ On Mac you can just drag and drop the file into the Terminal window and it will 
 - I'm on NBN50, using a 2012 Mac Pro with 3.06GHz 6-core Xeon and NVIDIA GeForce GT 640 2 GB graphics
 - I tried streaming a 5 minute 1080p MP4 file to Facebook, had about 10% of frames drop
 - I tried streaming the same file at 720p to Facebook, had <1% of frames drop
+
+![ffmpeg-utilisation.png](ffmpeg-utilisation.png)
