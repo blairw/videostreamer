@@ -16,7 +16,7 @@ brew install homebrew-ffmpeg/ffmpeg/ffmpeg $(brew options homebrew-ffmpeg/ffmpeg
 I imagine you could also get this working on Linux and Microsoft Windows (via WSL) if you can compile `ffmpeg` with `openssl` support. Haven't had a chance to test that myself, but this looks promising: https://askubuntu.com/questions/650577/how-to-compile-ffmpeg-with-https-support
 
 ## 2. Creating the shell script
-This assumes AAC encoding for the audio. If it isn't already AAC-encoded, use HandBrake to fix that up first!
+This assumes AAC encoding for the audio. If it isn't already AAC-encoded, use HandBrake to fix that up first: https://handbrake.fr/
 
 Some comments:
 
@@ -44,6 +44,6 @@ ffmpeg -re -i $1 \
 
 ## Performance (totally unscientific observations)
 
-- I'm on NBN50
-- I tried streaming a 5 minute 1080p MP4 file, had about 10% of frames drop
-- I tried streaming the same file at 720p, had <1% of frames drop
+- I'm on NBN50, using a 2012 Mac Pro with 3.06GHz 6-core Xeon and NVIDIA GeForce GT 640 2 GB graphics
+- I tried streaming a 5 minute 1080p MP4 file to Facebook, had about 10% of frames drop
+- I tried streaming the same file at 720p to Facebook, had <1% of frames drop
