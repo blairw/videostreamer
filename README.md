@@ -1,5 +1,7 @@
 # videostreamer
 
+This is a shell script that enables you to stream a pre-made video file from your computer to a video-streaming service like Facebook, YouTube, etc. I developed it for my church (www.oneheart.sydney) in response to the COVID-19 crisis and social-distancing lockdown. We ended up using FB/YT "Premiere" but I noticed some churches still like to go with "LIVE" for whatever reason so I'm sharing this here in case it benefits anyone. :)
+
 ## 1. Installing ffmpeg with OpenSSL on Mac
 
 This part adapted from https://gist.github.com/Piasy/b5dfd5c048eb69d1b91719988c0325d8
