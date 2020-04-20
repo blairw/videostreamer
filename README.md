@@ -27,6 +27,7 @@ Some comments:
 - Ensure that you use the `rtmps` protocol on Facebook, the `s` makes it secure. Using just `rtmp` (as most tutorials on the Internet seem to recommend) will cause Facebook to reject your upload.
 - Don't change `yuv420p`. The "420p" doesn't refer to a resolution of 420 pixels tall, it's a colour setting.
 
+### Shell script contents
 ```bash
 RTMP_URL="rtmps://rtmp-api.facebook.com:443/rtmp"
 RTMP_KEY="blahblahblah" #y your key goes here
