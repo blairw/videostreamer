@@ -44,6 +44,8 @@ ffmpeg -re -i $1 \
 
 Save the shell script above to your Desktop (e.g. `stream.sh`), give it appropriate permissions (e.g. `chmod +x stream.sh`). Then you can stream the video like so: `./stream.sh sunday200419.mp4`.
 
+On Mac you can just drag and drop the file into the Terminal window and it will set the parameter... handy!
+
 ![demo.gif](demo.gif)
 
 
