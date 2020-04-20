@@ -24,7 +24,7 @@ Some comments:
 
 - Set `RTMP_URL` annd `RTMP_KEY` based on what Facebook/YouTube/etc. assign to you when you set up a new livestream.
 - Set `PIXELS_WIDE` to the _horizontal_ pixel count that you want to broadcast at. For example, for 720p, this number should be set to `1280` for a 16:9 video (1280x720); for 1080p, this number should be set to `1920` for a 16:9 video (1920x1080).
-- Ensure that you use the `rtmps` protocol on Facebook, the `s` makes it secure. Using just `rtmp` (as most tutorials on the Internet seem to recommed) will cause Facebook to reject your upload.
+- Ensure that you use the `rtmps` protocol on Facebook, the `s` makes it secure. Using just `rtmp` (as most tutorials on the Internet seem to recommend) will cause Facebook to reject your upload.
 - Don't change `yuv420p`. The "420p" doesn't refer to a resolution of 420 pixels tall, it's a colour setting.
 
 ```bash
